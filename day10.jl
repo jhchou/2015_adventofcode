@@ -9,11 +9,12 @@ function look_and_say_num(input, num)
         # - eachmatch returns iterable of all matches over input
         # - each of the matches m is converted to look-and-say
         input = reduce(*, map(m -> string(length(m.match)) * m.captures[1], eachmatch(REG, input, overlap = false)))
+        # input = mapreduce(m -> string(length(m.match)) * m.captures[1], *, eachmatch(REG, input, overlap = false)) # much slower
     end
     return length(input)
 end
 
-
+look_and_say_num(line, 10) # test
 look_and_say_num(line, 40) # Part 1: 329356
 look_and_say_num(line, 50) # Part 2: 4666278
 
