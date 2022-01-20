@@ -150,6 +150,11 @@ version = "2.2.0"
 deps = ["Artifacts", "Dates", "Downloads", "LibGit2", "Libdl", "Logging", "Markdown", "Printf", "REPL", "Random", "SHA", "Serialization", "TOML", "Tar", "UUIDs", "p7zip_jll"]
 uuid = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
 
+[[deps.Primes]]
+git-tree-sha1 = "984a3ee07d47d401e0b823b7d30546792439070a"
+uuid = "27ebfcd6-29c5-5fa9-bf4b-fb8fc14df3ae"
+version = "0.5.1"
+
 [[deps.Printf]]
 deps = ["Unicode"]
 uuid = "de0858da-6303-5e67-8744-51eddeeeb8d7"
